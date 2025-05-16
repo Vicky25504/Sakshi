@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meri Pyaari Sakshi</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .card {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      max-width: 500px;
+    }
+    h1 {
+      color: #ffccdd;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    .heart {
+      font-size: 2rem;
+      color: red;
+      animation: beat 1s infinite alternate;
+    }
+    @keyframes beat {
+      from { transform: scale(1); }
+      to { transform: scale(1.2); }
+    }
+    audio {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Meri Pyaari Sakshi</h1>
+    <p>Mujhe tumse kehna tha... Tum meri duniya ho. Tumhari muskaan meri zindagi hai.</p>
+    <p class="heart">❤️</p>
+    <p>Jab bhi tum paas hoti ho, sab kuch khoobsurat lagta hai. Har din tumhare saath ek nayi kahaani ban jaata hai.</p>
+    <p>Tum ho to sab kuch hai. I love you!<br>– Vikas</p>
+  </div>
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
